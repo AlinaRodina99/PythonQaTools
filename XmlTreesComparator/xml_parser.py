@@ -36,7 +36,7 @@ dictionary_value_type_descriptions = {'0': ['Missing data', 'Отсутстви�
 
 
 # function to get names for obis codes
-def get_names_for_obis_codes(obis_codes, file_with_names, mode='russian'):
+def get_names_for_obis_codes(obis_codes, file_with_names, mode='not russian'):
     names_table = pd.read_excel(file_with_names)
     result_names = []
     if mode == 'russian':
